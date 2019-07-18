@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - _17",
+            "request": "launch",
+            "mainClass": "LeetCode._17"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - _14_Longest_Common_Prefix",
+            "request": "launch",
+            "mainClass": "LeetCode._14_Longest_Common_Prefix"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - _6_ZigZag_Conversion",
+            "request": "launch",
+            "mainClass": "LeetCode._6_ZigZag_Conversion"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - _0_jilu",
+            "request": "launch",
+            "mainClass": "LeetCode._0_jilu"
+        }
+    ]
+}
