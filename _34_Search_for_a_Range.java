@@ -69,7 +69,7 @@ public class _34_Search_for_a_Range {
         while(ll<=lr)
         {
             int m = (ll+lr)/2;
-            if(A[m]<target)
+            if(A[m]<target) //这里，这样是找第一个，最终通过ll找起始
             {
                 ll = m+1;
             }
@@ -83,7 +83,7 @@ public class _34_Search_for_a_Range {
         while(rl<=rr)
         {
             int m = (rl+rr)/2;
-            if(A[m]<=target)
+            if(A[m]<=target)    //这里，注意和上边的不同，这样是找最后一个，通过rr找最后
             {
                 rl = m+1;
             }
@@ -92,11 +92,49 @@ public class _34_Search_for_a_Range {
                 rr = m-1;
             }
         }
-        if(ll<=rr)
+        if(ll<=rr)  //注意这里是ll和rr，这里需要判断  5 7，如果target是6
         {
             res[0] = ll;
             res[1] = rr;
         }
         return res;
     }
+
+
+    //找left来确定始找左边还是右边
+    private int extremeInsertionIndex(int[] nums, int target, boolean left) {
+        int lo = 0;
+        int hi = nums.length;
+
+        while (lo < hi) {
+            int mid = (lo + hi) / 2;
+            if (nums[mid] > target || (left && target == nums[mid])) {
+                hi = mid;
+            }
+            else {
+                lo = mid+1;
+            }
+        }
+
+        return lo;
+    }
+
+    public int[] searchRange_3(int[] nums, int target) {
+        int[] targetRange = {-1, -1};
+
+        int leftIdx = extremeInsertionIndex(nums, target, true);
+
+        // assert that `leftIdx` is within the array bounds and that `target`
+        // is actually in `nums`.
+        if (leftIdx == nums.length || nums[leftIdx] != target) {
+            return targetRange;
+        }
+
+        targetRange[0] = leftIdx;
+        targetRange[1] = extremeInsertionIndex(nums, target, false)-1;
+
+        return targetRange;
+    }
+
+
 }
