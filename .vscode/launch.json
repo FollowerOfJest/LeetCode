@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - _46_Permutations",
+            "request": "launch",
+            "mainClass": "LeetCode._46_Permutations"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - _17",
             "request": "launch",
             "mainClass": "LeetCode._17"
