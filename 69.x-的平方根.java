@@ -1,9 +1,9 @@
-package LeetCode;
-
-/**
- * Created by 54359 on 2017/10/4.
+/*
+ * @lc app=leetcode.cn id=69 lang=java
+ *
+ * [69] x 的平方根
  */
-public class _69_Sqrt_x {
+class Solution {
     public int mySqrt(int x) {
         if (x == 0) return 0;
         if (x == 1) return 1;
@@ -45,19 +45,5 @@ public class _69_Sqrt_x {
             }
         }
     }
-    /*位运算的方法，值得看一看
-    public int mySqrt(int x) {
-        long ans = 0;
-        long bit = 1l << 16;
-        while(bit > 0) {
-            ans |= bit;
-            if (ans * ans > x) {
-                ans ^= bit;
-            }
-            bit >>= 1;
-        }
-        return (int)ans;
-    }
-    */
-
 }
+
