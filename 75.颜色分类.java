@@ -1,9 +1,9 @@
-package LeetCode;
-
-/**
- * Created by 54359 on 2017/7/11.
+/*
+ * @lc app=leetcode.cn id=75 lang=java
+ *
+ * [75] 颜色分类
  */
-public class _75_Sort_Colors {
+class Solution {
     public void sortColors(int[] nums) {
         int length=nums.length;
         if(length==0 || length==1) return;
