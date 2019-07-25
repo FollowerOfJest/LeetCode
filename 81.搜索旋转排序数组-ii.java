@@ -1,9 +1,9 @@
-package LeetCode;
-
-/**
- * Created by 54359 on 2017/7/13.
+/*
+ * @lc app=leetcode.cn id=81 lang=java
+ *
+ * [81] 搜索旋转排序数组 II
  */
-public class _81_Search_in_Rotated_Sorted_Array_II {
+class Solution {
     /*
     和Search in Rotated Sorted Array唯一的区别是这道题目中元素会有重复的情况出现。不过正是因为这个条件的出现，出现了比较复杂的case，甚至影响到了算法的时间复杂度。
     原来我们是依靠中间和边缘元素的大小关系，来判断哪一半是不受rotate影响，仍然有序的。
@@ -43,3 +43,4 @@ public class _81_Search_in_Rotated_Sorted_Array_II {
         return false;
     }
 }
+
