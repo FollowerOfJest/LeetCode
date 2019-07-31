@@ -218,15 +218,27 @@ total:39
     #使用queue保存每一层的信息
 103 同上，不过是锯齿状
     #还是同样的方法
+107 102的反向输出，从底层到上层
 
 104 二叉树的最大深度
     不用递归的方法，想想也就是用queue存储每一层信息，看能向下多少层
 
 105 二叉树，先序和中序推导
     ##
+106 二叉树，后序和中序推导
+    ##
 
+108 有序数组构成二叉搜索树
+    二分搜索的话l+(r-l)/2更好，防止溢出
+    #再看下网上抄的不用递归的方法
 
-    total 90
+109 有序链表转换成二叉搜索树
+    ##看下网上的答案把 https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/solution/you-xu-lian-biao-zhuan-huan-er-cha-sou-suo-shu-by-/
+
+110 判断是不是平衡二叉树
+    ##
+
+    total 94
 
 
 
