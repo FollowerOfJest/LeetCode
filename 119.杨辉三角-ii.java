@@ -42,6 +42,7 @@ class Solution {
  */
 public List<Integer> getRow(int rowIndex) {
     List<Integer> res = new ArrayList<>(rowIndex + 1);
+    //用long的原因是为了防止int溢出
     long cur = 1;
     for (int i = 0; i <= rowIndex; i++) {
         res.add((int) cur);

@@ -1,11 +1,9 @@
-package LeetCode;
-
-import java.util.List;
-
-/**
- * Created by 54359 on 2017/7/21.
+/*
+ * @lc app=leetcode.cn id=120 lang=java
+ *
+ * [120] 三角形最小路径和
  */
-public class _120_Triangle {
+class Solution {
     //空间复杂度位O(n)，从底下往上搞比较好
     public int minimumTotal(List<List<Integer>> trgl) {
         int sz = trgl.size();
@@ -19,3 +17,4 @@ public class _120_Triangle {
         return results[0];
     }
 }
+
